@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #64b0e4, #7fbfea, #99cef1, #b2dcf7, #cbebfe);
+  
+}
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 800px;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #FFF;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 2px 16px;
+}
+
+img {
+    height: 400px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #050917;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #050563;
+}
+
+.btn {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn-primary {
+    position: relative;
+    padding: 10px 22px;
+    background-color: #374785;
+    border: radius 8px;
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #5974e0;
+}
+
+.btn-primary:active {
+    transform: scale(0.96);
+}
+.btn-wsp {
+    position:fixed;
+    height:55px;
+    width:55px; 
+    bottom: 50px;
+    right: 10px;
+    line-height:55px; 
+    color:white;
+    background-color:#12e22b;
+    border-radius: 50px;
+    text-align:center;
+    font-size:15px;
+    box-shadow:0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    font-weight: bold;
+      }
+
+
+.btn-wsp:hover {
+    text-decoration: none;
+    background-color:#16a242;
+}
+.btn-wsp i {
+    color:#FFF
+}
+
+.tooltip {
+  width: 180px;
+  background-color: #222b23;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  z-index:100;
+  bottom: 0px;
+  right:30px;
+  position:  fixed;
+  visibility:hidden
+}
+
+@media (max-width:600px) {
+    .grid-container {
+        
+        grid-template-columns: repeat(1, 1fr);
+        
+        width: 500px;
+    }
+    .tooltip{ 
+        width: 120px;
+        bottom: -15px;
+
+    }
+    .title{
+        font-size: large;
+        
+    }
+    .subtitle{
+        font-size: medium;
+    }
+    .plans{
+        font-size: smaller;
+    }
+} 
+    
